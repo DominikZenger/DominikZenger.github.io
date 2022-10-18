@@ -1,13 +1,50 @@
 #menuIcon {
-
 }
 
 ul {
-
-    border: solid black 1px;
+    list-style-type: none;
+    /*border: solid black 1px;*/
+    padding: 0 0 0 0;
+    margin-top: 0;
 }
 li {
+    /*margin-top: 1%;*/
+    /*margin-bottom: 1%;*/
+    display: flex;
+    /*justify-content: center;*/
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    padding-block: 10px;
 }
+
+
+
+
+.icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 1rem;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+}
+.description {
+    opacity: 1;
+    /*transition: all .4s linear ;*/
+    transition-delay: 0s;
+
+}
+#menuSide:hover .description{
+    opacity: 1;
+    transition-delay: .1s;
+}
+#menuSide:hover li{
+    /*justify-content: center;*/
+}
+#menuSide:hover .icon{
+}
+
 h1 {
     position: fixed;
     text-align: center;
@@ -27,7 +64,7 @@ h1 {
     position: absolute;
     width: 10%;
     height: 100%;
-    margin  : 5rem;
+    margin : 5rem;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -53,6 +90,7 @@ h1 {
 #menuSide:hover {
     width: 20%;
 }
+
 #traffic {
     /*visibility: hidden;*/
     z-index: -2;
