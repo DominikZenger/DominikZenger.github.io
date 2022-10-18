@@ -1,6 +1,19 @@
 #menuIcon {
 
 }
+
+ul {
+
+    border: solid black 1px;
+}
+li {
+}
+h1 {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
 #root {
     width: 100%;
     height: 100%;
@@ -14,12 +27,13 @@
     position: absolute;
     width: 10%;
     height: 100%;
+    margin  : 5rem;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 #menuSide {
     position: fixed;
-
+    vertical-align: center;
     text-align: center;
     width: 3%;
     /*height: 100%;*/
