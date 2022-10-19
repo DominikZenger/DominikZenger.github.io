@@ -46,12 +46,17 @@ a {
 }
 #menuSide:hover .icon{
 }
-
+#map_pt {
+    scale: .5;
+    float: left;
+}
 h1 {
-    position: fixed;
     text-align: center;
     width: 100%;
     top: 0;
+}
+a {
+    text-decoration: none;
 }
 #root {
     width: 100%;
@@ -63,11 +68,18 @@ h1 {
     overflow: inherit;
 }
 .text-wrapper {
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    margin : 5rem;
+
+    padding : 100px 100px 100px 100px;
+    margin: 100px 100px 100px 200px;
     background-color: rgba(255, 255, 255, 0.7);
+    border: solid black 1px;
+    text-align: left;
+}
+.image-wrapper {
+    margin: 100px 100px 100px 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid black 1px;
+    text-align: left;
 }
 
 #menuSide {
@@ -83,7 +95,6 @@ h1 {
 }
 #content {
     z-index: 5;
-    position: absolute;
     left: 3%;
     width: 97%;
     height: 5000px;
@@ -94,17 +105,6 @@ h1 {
     width: 20%;
 }
 
-#traffic {
-    /*visibility: hidden;*/
-    z-index: -2;
-    position: fixed;
-    width: 100%;
-    transform: scale(3);
-    transform-origin: 52.5% 15%;
-    animation: scale 1s ease-in-out forwards;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -.2s);
-}
 
 
 
@@ -115,8 +115,6 @@ h1 {
     }
 }
 body {
-    height: 100%;
-    width: 100%;
     font-family: Arial, sans-serif;
 }
 html, body{margin:0; padding:0;height: 5000px;}
