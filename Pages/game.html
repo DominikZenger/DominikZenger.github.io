@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../Styles/menubar.css">
     <link rel="stylesheet" href="../Styles/basecontent.css">
+    <link rel="stylesheet" href="../Styles/game.css">
     <title>Page</title>
 </head>
 <body>
@@ -29,12 +30,25 @@
                 </a>
             </li>
             <li>
-                <a href="page.html">
+                <a href="game.html">
                     <img class="icon" src="../Icons/4.png" alt="">
-                    <b class="description">Description 1</b>
+                    <b class="description">Game</b>
                 </a>
             </li>
         </ul>
+    </div>
+
+    <br>
+    <script src="../Scripts/game.js"></script>
+    <div class="wrapper">
+        <div id="game" onclick="jump()">
+            <div id="character"></div>
+            <div id="block"></div>
+            <div id="cover"></div>
+        </div>
+
+        <br><br><br>
+        <font size="25px"><b id="lost"></b></font>
     </div>
 </body>
 </html>
