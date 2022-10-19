@@ -40,6 +40,8 @@ function next() {
     document.getElementById("f1a3").style.color = "black";
     document.getElementById("f1a4").style.color = "black";
     
+    document.querySelector('input[name="f1"]:checked').checked = false;
+
     alert("Nächste Frage!");
     button.firstChild.data = "Überprüfen";
     button.onclick = () => submit();
