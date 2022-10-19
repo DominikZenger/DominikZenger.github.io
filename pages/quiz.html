@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Styles/menubar.css">
+    <link rel="stylesheet" href="../Styles/basecontent.css">
+    <title>Page</title>
+</head>
+<body>
+    <div id="menuSide">
+        <img id="menuIcon" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/VisualEditor_-_Icon_-_Menu.svg" alt="">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img class="icon" src="../Icons/1.png" alt="">
+                    <b class="description">Home</b>
+                </a>
+            </li>
+            <li>
+                <a href="gifs.html">
+                    <img class="icon" src="../Icons/2.png" alt="">
+                    <b class="description">GIFs</b>
+                </a>
+            </li>
+            <li>
+                <a href="quiz.html">
+                    <img class="icon" src="../Icons/3.png" alt="">
+                    <b class="description">Quiz</b>
+                </a>
+            </li>
+            <li>
+                <a href="page.html">
+                    <img class="icon" src="../Icons/4.png" alt="">
+                    <b class="description">Description 1</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <div class="wrapper">
+        <b>Hier steht eine Frage.</b>
+        <br><br>
+        <input type="radio" name="f1" value="a1">
+        <label id="f1a1"> Falsche Antwort 1</label><br>
+        <input type="radio" name="f1" value="a2">
+        <label id="f1a2"> Falsche Antwort 2</label><br>
+        <input type="radio" name="f1" value="a3">
+        <label id="f1a3"> Richtige Antwort</label><br>
+        <input type="radio" name="f1" value="a4">
+        <label id="f1a4"> Falsche Antwort 3</label>
+        <br><br>
+
+        <script src="../Scripts/quiz.js"></script>
+        <button id="button" onclick="submit()">Überprüfen</button>
+    </div>
+</body>
+</html>
