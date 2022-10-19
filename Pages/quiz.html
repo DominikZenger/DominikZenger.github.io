@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../Styles/menubar.css">
     <link rel="stylesheet" href="../Styles/basecontent.css">
+    <link rel="stylesheet" href="../Styles/quiz.css">
+    <script src="../Scripts/quiz.js"></script>
     <title>Page</title>
 </head>
 <body>
@@ -38,21 +40,40 @@
     </div>
 
     <br>
-    <div class="wrapper">
-        <b>Hier steht eine Frage.</b>
-        <br><br>
-        <input type="radio" name="f1" value="a1">
-        <label id="f1a1"> Falsche Antwort 1</label><br>
-        <input type="radio" name="f1" value="a2">
-        <label id="f1a2"> Falsche Antwort 2</label><br>
-        <input type="radio" name="f1" value="a3">
-        <label id="f1a3"> Richtige Antwort</label><br>
-        <input type="radio" name="f1" value="a4">
-        <label id="f1a4"> Falsche Antwort 3</label>
-        <br><br>
+    <div id="content">
+        <div class="question-wrapper">
+            <b>Frage?</b>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item" id="0">
+                <button onclick="submit(0)" class="quiz-button">
+                    Frage 1 langer Text
+                </button>
+            </div>
+            <div class="grid-item" id="1">
+                <button onclick="submit(1)" class="quiz-button">
+                    2
+                </button>
+            </div>
+            <div class="grid-item" id="2" >
+                <button onclick="submit(2)" class="quiz-button">
+                    3
+                </button>
+            </div>
+            <div class="grid-item" id="3">
+                <button onclick="submit(3)" class="quiz-button">
+                    4
+                </button>
+            </div>
+        </div>
+        <div class="question-wrapper">
+            <button onclick="next()" id="next">
+                Next
+            </button>
+        </div>
 
-        <script src="../Scripts/quiz.js"></script>
-        <button id="button" onclick="submit()">Überprüfen</button>
     </div>
+
+
 </body>
 </html>

@@ -1,48 +1,48 @@
-// Muss für mehr Fragen umgeschrieben werden!
-function submit() {
-    try {
-        input = document.querySelector('input[name="f1"]:checked').value;
+var correct = 3;
+var number = 0;
 
-        var soundCorrect = new Audio("../Sounds/correct.mp3");
-        var soundWrong = new Audio("../Sounds/wrong.mp3");
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
-        switch(input) {
-            case "a1": 
-                document.getElementById("f1a1").style.color = "red";
-                document.getElementById("f1a3").style.color = "green";
-                soundWrong.play();
-                break;
-            case "a2": 
-                document.getElementById("f1a2").style.color = "red";
-                document.getElementById("f1a3").style.color = "green";
-                soundWrong.play();
-                break;
-            case "a3": 
-                document.getElementById("f1a3").style.color = "green";
-                soundCorrect.play();
-                break;
-            case "a4": 
-                document.getElementById("f1a4").style.color = "red";
-                document.getElementById("f1a3").style.color = "green";
-                soundWrong.play();
-                break;
+function submit(i) {
+    let list = document.getElementsByClassName("grid-item");
+    for (let item of list) {
+        if (item.id === i.toString()) {
+            item.style.setProperty("border", "solid aqua 3px");
         }
+        if (item.id === correct.toString()) {
+            item.style.setProperty("background-color", "green");
+        }
+        else {
+            item.style.setProperty("background-color", "red");
+        }
+    }
+    document.getElementById("next").style.setProperty("visibility", "visible");
 
-        button = document.getElementById("button");
-        button.firstChild.data = "Weiter";
-        button.onclick = () => next();
-    } catch (ignored) {}
+
 }
-
 function next() {
-    document.getElementById("f1a1").style.color = "black";
-    document.getElementById("f1a2").style.color = "black";
-    document.getElementById("f1a3").style.color = "black";
-    document.getElementById("f1a4").style.color = "black";
-    
-    document.querySelector('input[name="f1"]:checked').checked = false;
-
-    alert("Nächste Frage!");
-    button.firstChild.data = "Überprüfen";
-    button.onclick = () => submit();
+    window.number = window.number + 1
+    resetStyle();
+    newQuestion();
 }
+function resetStyle() {
+    document.getElementById("next").style.setProperty("visibility", "hidden");
+    let list = document.getElementsByClassName("grid-item");
+    for (let item of list) {
+        item.style.setProperty("border", "solid black 1px");
+        item.style.setProperty("background-color", "white");
+        item.style.setProperty("background-color", "white");
+    }
+}
+function newQuestion() {
+    let buttons = document.getElementsByClassName("quiz-button");
+    console.log(buttons.length);
+    for (let button of buttons) {
+        button.innerText = "new" + number.toString();
+    }
+    window.correct = getRandomInt(3)
+}
+
+
