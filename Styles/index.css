@@ -2,4 +2,20 @@
     position: relative;
     width: 880px;
 }
+#glass{
+    width: 50px;
+    height: 100px;
+    background-color: transparent;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+#water{
+    width: 50px;
+    background-color: lightblue;
+    position: absolute;
+    bottom: 0px;
+    transition: height 1s linear;
+}
 
