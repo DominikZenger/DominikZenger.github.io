@@ -1,0 +1,25 @@
+.wrapper {
+    position: relative;
+    margin: 20px 100px 20px 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /*border: solid black 1px;*/
+}
+
+
+#content {
+    z-index: 5;
+    left: 3%;
+    width: 97%;
+    height: 5000px;
+    overflow: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+html, body{margin:0; padding:0;height: 5000px;}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
