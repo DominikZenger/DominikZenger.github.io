@@ -35,8 +35,8 @@ function resetStyle() {
     document.getElementById("next").style.setProperty("visibility", "hidden");
     let list = document.getElementsByClassName("quiz-button");
     for (let item of list) {
-        item.style.setProperty("background-color", "#fafafa");
-        item.style.setProperty("background-color", "#fafafa");
+        item.style.setProperty("background-color", "#f0f0f0");
+        item.style.setProperty("background-color", "#f0f0f0");
     }
 }
 function newQuestion() {
