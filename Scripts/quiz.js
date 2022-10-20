@@ -1,39 +1,42 @@
 var correct = 3;
 var number = 0;
+var pending = true;
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
 function submit(i) {
-    let list = document.getElementsByClassName("grid-item");
+    if (!window.pending) {
+        return
+    }
+    let list = document.getElementsByClassName("quiz-button");
     for (let item of list) {
-        if (item.id === i.toString()) {
-            item.style.setProperty("border", "solid aqua 3px");
+
+        if (item.parentElement.id === correct.toString()) { //correct
+            item.style.setProperty("background-color", "#26890c");
         }
-        if (item.id === correct.toString()) {
-            item.style.setProperty("background-color", "green");
-        }
-        else {
-            item.style.setProperty("background-color", "red");
+        else if (item.parentElement.id === i.toString()){ //wrong
+            item.style.setProperty("background-color", "#c60929");
+
         }
     }
     document.getElementById("next").style.setProperty("visibility", "visible");
-
+    window.pending = false;
 
 }
 function next() {
-    window.number = window.number + 1
+    window.number = window.number + 1;
     resetStyle();
     newQuestion();
+    window.pending = true;
 }
 function resetStyle() {
     document.getElementById("next").style.setProperty("visibility", "hidden");
-    let list = document.getElementsByClassName("grid-item");
+    let list = document.getElementsByClassName("quiz-button");
     for (let item of list) {
-        item.style.setProperty("border", "solid black 1px");
-        item.style.setProperty("background-color", "white");
-        item.style.setProperty("background-color", "white");
+        item.style.setProperty("background-color", "#fafafa");
+        item.style.setProperty("background-color", "#fafafa");
     }
 }
 function newQuestion() {
@@ -42,7 +45,7 @@ function newQuestion() {
     for (let button of buttons) {
         button.innerText = "new" + number.toString();
     }
-    window.correct = getRandomInt(3)
+    window.correct = getRandomInt(3);
 }
 
 
