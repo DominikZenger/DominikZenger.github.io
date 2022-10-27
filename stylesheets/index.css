@@ -1,0 +1,14 @@
+/*
+Homepage styles
+*/
+
+body {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
