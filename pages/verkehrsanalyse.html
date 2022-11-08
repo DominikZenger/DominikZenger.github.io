@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="uTF-8">
+    <link rel="stylesheet" href="../stylesheets/basecontent.css">
+    <link rel="stylesheet" href="../stylesheets/sidebar.css">
+    <link rel="stylesheet" href="../stylesheets/verkehrsanalyse.css">
+    <title>Verkehrsanalyse</title>
+</head>
+<body>
+    <!-- https://api.jquery.com/load/ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="sidebar"></div>
+    <script type="text/javascript">$("#sidebar").load("../includes/sidebar.html");</script>
+
+    <h1>Verkehrsanalyse</h1>
+    <!--
+        0 = Feldkirchner-Kreuzung 
+        1 = Kreuzung Ammerthalstraße und Feldkirchner Straße
+        2 = Kirchheimer-Ei
+        3 = Kirchheimer-Kreuzung
+        4 = Florianstraße
+    -->
+    <div id="map">
+        <script src="../scripts/Verkehrsanalyse.js"></script>
+        <img src="../assets/images/Verkehrsanalyse_Map.png" alt="Verkehrsanalyse Karte" style="width: calc(var(--map-scale) * 698px);">
+        <div class="circle" id="c0" onclick="selectArea(0)"></div>
+        <div class="circle" id="c1" onclick="selectArea(1)"></div>
+        <div class="circle" id="c2" onclick="selectArea(2)"></div>
+        <div class="circle" id="c3" onclick="selectArea(3)"></div>
+        <div class="circle" id="c4" onclick="selectArea(4)"></div>
+        <br><i>Quelle: Google Maps</i>
+    </div>
+    <br>
+    <h2 id="name">Name</h2>
+    <div id="infos">
+        <div>Hier kommen Informationen zur Feldkirchner-Kreuzung hin.</div>
+        <div>Hier kommen Informationen zur Kreuzung Ammerthalstraße und Feldkirchner Straße hin.</div>
+        <div>Hier kommen Informationen zum Kirchheimer-Ei hin.</div>
+        <div>Hier kommen Informationen zur Kirchheimer-Kreuzung hin.</div>
+        <div>Hier kommen Informationen zur Florianstraße hin.</div>
+    </div>
+    <script>allInfosInvisible()</script>
+</body>
+</html>
