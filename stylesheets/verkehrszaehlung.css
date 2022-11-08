@@ -1,0 +1,47 @@
+.wrapper {
+    position: absolute;
+}
+.wrapper img {
+    width: 1000px;
+    opacity: 30%;
+}
+.wrapper i {
+    display: block;
+}
+
+.question {
+    position: absolute;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.question input {
+    transform: scale(1.5);
+    vertical-align: 4px;
+    margin-bottom: 20px;
+}
+
+#button {
+    position: relative;
+    margin-top: 30px;
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #87ceeb;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    user-select: none;
+}
+#button:hover {
+    background-color: #62c1e0;
+}
+
+#result {
+    font-size: 30px;
+    font-style: italic;
+    color: red;
+}
+#infos {
+    margin-top: 30px;
+}
