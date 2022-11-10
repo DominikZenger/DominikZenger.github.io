@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     position: relative;
-    --circle-size: 50px; /* Absolute value (e.g. 25px) */
+    --circle-size: 40px; /* Absolute value (e.g. 25px) */
     --map-scale: 1; /* Relative value, (e.g. 1 = width of 698px) */
 }
 

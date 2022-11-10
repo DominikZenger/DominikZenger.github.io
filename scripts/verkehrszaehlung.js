@@ -42,10 +42,10 @@ function quizStart() {
 
 function countCorrect() {
     count = 0;
-    document.getElementById("q1a4").checked ? count++ : null;
-    document.getElementById("q2a3").checked ? count++ : null;
-    document.getElementById("q3a4").checked ? count++ : null;
-    document.getElementById("q4a3").checked ? count++ : null;
+    document.getElementById("q1a3").checked ? count++ : null;
+    document.getElementById("q2a2").checked ? count++ : null;
+    document.getElementById("q3a3").checked ? count++ : null;
+    document.getElementById("q4a2").checked ? count++ : null;
     return count;
 }
 
