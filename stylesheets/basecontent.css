@@ -2,18 +2,14 @@
 Content page styles
 */
 
-:root {
-    --font-color: black;
-    --font-family: Arial, sans-serif;
-    --background-color: white;
-    --color-1: antiquewhite;
-}
-
 body {
-    font-family: var(--font-family);
-    color: var(--font-color);
-    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
     margin-top: 30px;
     margin-left: 130px;
     padding: 0;
+}
+body h1 {
+    font-size: 50px;
 }
