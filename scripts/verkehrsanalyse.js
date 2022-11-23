@@ -25,6 +25,7 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridFeldkirchenerKreuzung, container);
             }
+            select(0);
             window.scrollTo(0, 1000);
             break;
         case 1:
@@ -33,6 +34,7 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridAmmerthal, container);
             }
+            select(0);
             window.scrollTo(0, 1000);
             break;
         case 2: 
@@ -41,6 +43,7 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridEi, container);
             }
+            select(0);
             window.scrollTo(0, 1000);
             break;
         case 3: 
@@ -49,6 +52,7 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridKirchheimerKreuzung, container);
             }
+            select(0);
             window.scrollTo(0, 1000);
             break;
         case 4: 
@@ -57,6 +61,7 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridflorianStrasse, container);
             }
+            select(0);
             window.scrollTo(0, 1000);
             break;
     }
@@ -119,7 +124,7 @@ let colorGridEi = [
     ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000"],
     ["#C1C1C1", green, brightorange, red, brightorange, brightorange, brightorange, green, green, brightorange, brightorange, brightorange, red, brightorange, brightorange, green, green, green],
     ["#FFFFFF", green, brightorange, red, brightorange, green, green, brightorange, brightorange, brightorange, brightorange, brightorange, red, brightorange, brightorange, green, green, green],
-    ["#C1C1C1", green, brightorange, brightorange, brightorange, brightorange, green, brightorange, brightorange, brightorange, brightorange, brightorange, darkorange, brightorange, green, green, green, green],
+    ["#C1C1C1", green, brightorange, brightorange, brightorange, brightorange, green, brightorange, brightorange, brightorange, brightorange, brightorange, red, brightorange, green, green, green, green],
     ["#FFFFFF", green, brightorange, red, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, red, red, red, green, green, green, green],
     ["#C1C1C1", brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, green, green, green, green],
     ["#FFFFFF", green, brightorange, green, green, green, green, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, green, green, green, green],
@@ -147,7 +152,6 @@ let textGrid = [
 ]
 
 function createGrid(colorGrid, container) {
-    console.log("test");
     for (let i = 0; i < 18*8; i++) {
         var gridItem = document.createElement("div");
         gridItem.className = "grid-item";
@@ -176,7 +180,6 @@ function createGrid(colorGrid, container) {
 
 }
 function select(i) {
-    console.log(i);
     const items = document.getElementsByClassName("grid-item");
     for (let r = 0; r < items.length; r++) {
         items.item(r).style.opacity = "1";
@@ -188,7 +191,6 @@ function select(i) {
     const column = parseInt(i) % 18;
     for (let r = 0; r < items.length; r++) {
         if((Math.floor(parseInt(r) / 18) % 8 !== row) && ((parseInt(r) % 18) !== column)) {
-            console.log(items.item(r).id)
             items.item(r).style.opacity = "0.5";
         }
     }
