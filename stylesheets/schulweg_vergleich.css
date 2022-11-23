@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    margin: 10px 100px 20px 200px;
+    grid-template-columns: auto auto;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.bar {
+    background-color: red;
+    height: 50px;
+    margin: 30px;
+}
+.grid {
+    position: relative;
+    padding: 5px 0 5px 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+
+    background: white;
+}
