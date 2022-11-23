@@ -4,6 +4,7 @@
     <meta charset="uTF-8">
     <link rel="stylesheet" href="../stylesheets/basecontent.css">
     <link rel="stylesheet" href="../stylesheets/sidebar.css">
+    <link rel="stylesheet" href="../stylesheets/oepnv.css">
     <title>ÖPNV</title>
 </head>
 <body>
@@ -13,7 +14,18 @@
     <script type="text/javascript">$("#sidebar").load("../includes/sidebar.html");</script>
 
     <h1>ÖPNV</h1>
-    <img src="../assets/images/Map_v2.png" style="width: 1000px;">
-    <p>Das ist nur temporär, Quelle fehlt!</p>
+    <div id="map">
+        <img class="map" src="../assets/images/map.png">
+        <img class="map" id="overlay" src="../assets/images/map_car.png">
+        <div id="oepnv_icons">
+            <img class="oepnv_icon" id="icon_map" src="../assets/icons/map_w.svg" alt="Map" onclick="select(0)">
+            <img class="oepnv_icon" id="icon_oepnv" src="../assets/icons/oepnv_w.svg" alt="ÖPNV" onclick="select(1)">
+            <img class="oepnv_icon" id="icon_car" src="../assets/icons/car_w.svg" alt="Auto" onclick="select(2)">
+            <img class="oepnv_icon" id="icon_bicycle" src="../assets/icons/bicycle_w.svg" alt="Fahrrad" onclick="select(3)">
+        </div>
+        <p id="source">Quelle: Google Maps</p>
+    </div>
+
+    <script src="../scripts/oepnv.js"></script>
 </body>
 </html>
