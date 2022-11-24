@@ -34,3 +34,4 @@ function allWhite() {
         icon[0].src = icon[1];
     });
 }
+
