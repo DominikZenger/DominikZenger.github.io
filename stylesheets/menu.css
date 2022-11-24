@@ -2,7 +2,7 @@
 Sidebar styles
 */
 
-#menuSide {
+#menu {
     z-index: 10;
     position: fixed;
     top: 0;
@@ -47,16 +47,16 @@ li {
 
 }
 
-#menuSide:hover .description{
+#menu:hover .description{
     opacity: 1;
     transition-delay: .1s;
 }
-#menuSide:hover li{
+#menu:hover li{
     /*justify-content: center;*/
 }
-#menuSide:hover .icon{
+#menu:hover .icon{
 }
-#menuSide:hover {
+#menu:hover {
     width: 30%;
 }
 
