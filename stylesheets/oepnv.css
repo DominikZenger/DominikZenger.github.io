@@ -27,8 +27,13 @@
 }
 #oepnv_icons {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 }
+#legende {
+    margin-top: 40px;
+}
+
+
 
 #preload-1 { background: url(../assets/images/map_oepnv.png) no-repeat -9999px -9999px; }
 #preload-2 { background: url(../assets/images/map_car.png) no-repeat -9999px -9999px; }
