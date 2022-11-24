@@ -25,7 +25,6 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridFeldkirchenerKreuzung, container);
             }
-            select(0);
             window.scrollTo(0, 1000);
             break;
         case 1:
@@ -34,7 +33,6 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridAmmerthal, container);
             }
-            select(0);
             window.scrollTo(0, 1000);
             break;
         case 2: 
@@ -43,7 +41,6 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridEi, container);
             }
-            select(0);
             window.scrollTo(0, 1000);
             break;
         case 3: 
@@ -52,7 +49,6 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridKirchheimerKreuzung, container);
             }
-            select(0);
             window.scrollTo(0, 1000);
             break;
         case 4: 
@@ -61,7 +57,6 @@ function selectArea(id) {
             if (!container.lastElementChild) {
                 createGrid(colorGridflorianStrasse, container);
             }
-            select(0);
             window.scrollTo(0, 1000);
             break;
     }
