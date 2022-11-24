@@ -38,6 +38,22 @@ function submit() {
     }
     result.style.border = "3px solid black";
 
+    switch(correct) {
+        case 0:
+            result.style.backgroundColor = "#F0BBC2";
+            result.style.color = "#9C0006";
+            result.style.borderColor = "#9C0006";
+            break;
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            result.style.backgroundColor = "#C1E9C9";
+            result.style.color = "#006100";
+            result.style.borderColor = "#006100";
+            break;
+    }
+
     document.getElementById("button").innerHTML = "Weiter";
     document.getElementById("button").onclick = next;
 
