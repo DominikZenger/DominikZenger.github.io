@@ -4,6 +4,8 @@
     <meta charset="uTF-8">
     <link rel="stylesheet" href="../stylesheets/basecontent.css">
     <link rel="stylesheet" href="../stylesheets/sidebar.css">
+    <link rel="stylesheet" href="../stylesheets/verkehrsnutzung.css">
+    <script src="../scripts/verkehrsnutzung.js"></script>
     <title>Verkehrsnutzung</title>
 </head>
 <body>
@@ -13,6 +15,19 @@
     <script type="text/javascript">$("#sidebar").load("../includes/sidebar.html");</script>
 
     <h1>Verkehrsnutzung der Schüler unserer Schule</h1>
-    <img src="../assets/images/temp_1.png" style="width: 1000px;">
+<!--    <img src="../assets/images/temp_1.png" style="width: 1000px;">-->
+
+    <table class="graph">
+        <tr class="bar" style="height:85%" onclick="select(this)">
+            <th scope="row"></th>
+            <td><span>85%</span></td>
+        </tr>
+        <tr class="bar" style="height:85%">
+            <th scope="row"></th>
+            <td><span>85%</span></td>
+        </tr>
+
+    </table>
+
 </body>
 </html>
