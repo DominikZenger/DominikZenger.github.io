@@ -10,13 +10,14 @@ function selectArea(id) {
     }
     currentlyClicked = id;
 
-    let name = document.getElementById("name");
-    let infos = document.getElementById("infos").children;
-    let circles = document.getElementsByClassName("circle");
+    const name = document.getElementById("name");
+    const infos = document.getElementById("infos").children;
+    const circles = document.getElementsByClassName("circle");
 
     circles[id].style.backgroundColor = "blue";
-    setVisible(infos[id], true); 
+    setVisible(infos[id], true);
     setVisible(name, true);
+    setVisible(document.getElementById("base-infos"), true);
     let container;
     switch(id) {
         case 0: 
@@ -64,6 +65,7 @@ function selectArea(id) {
 
 function allInfosInvisible() {
     setVisible(document.getElementById("name"), false);
+    setVisible(document.getElementById("base-infos"), false);
     let infos = document.getElementById("infos").children;
     for(var i = 0; i < infos.length; i++) {
         setVisible(infos[i], false);
