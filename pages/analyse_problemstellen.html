@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../stylesheets/menu.css">
     <link rel="stylesheet" href="../stylesheets/analyse_problemstellen.css">
     <script src="../scripts/analyse_problemstellen.js"></script>
-    <title>Analyse Problemstellen</title>
+    <title>Mobilität der Zukunft - Analyse Problemstellen</title>
 </head>
 <body>
     <!-- https://api.jquery.com/load/ -->
@@ -25,11 +25,11 @@
     <p style="margin-bottom: 10px;">Abbildung der Gemeinden Kirchheim, Feldkirchen und Aschheim.</p>
     <div id="map">
         <img src="../assets/images/Verkehrsanalyse_Map.png" alt="Verkehrsanalyse Karte" style="width: calc(var(--map-scale) * 698px);">
-        <div class="circle" id="c0" onclick="selectArea(0)"></div>
-        <div class="circle" id="c1" onclick="selectArea(1)"></div>
-        <div class="circle" id="c2" onclick="selectArea(2)"></div>
-        <div class="circle" id="c3" onclick="selectArea(3)"></div>
-        <div class="circle" id="c4" onclick="selectArea(4)"></div>
+        <div class="circle" id="c0" onclick="selectArea(0)" title="Feldkirchner-Kreuzung"></div>
+        <div class="circle" id="c1" onclick="selectArea(1)" title="Kreuzung Ammerthalstraße und Feldkirchner Straße"></div>
+        <div class="circle" id="c2" onclick="selectArea(2)" title="Kirchheimer-Ei"></div>
+        <div class="circle" id="c3" onclick="selectArea(3)" title="Kirchheimer-Kreuzung"></div>
+        <div class="circle" id="c4" onclick="selectArea(4)" title="Florianstraße"></div>
         <br><i>Quelle: Google Maps</i>
     </div>
     <br>

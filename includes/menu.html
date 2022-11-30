@@ -1,7 +1,10 @@
 <div id="menu">
     <ul class="groups">
         <li class="dropdown">
-            <div class="dropdown-title">Analyse</div>
+            <div class="dropdown-title">
+                <img src="../assets/icons/arrow_down.svg" alt="v">
+                Analyse
+            </div>
             <div class="dropdown-content">
                 <a href="../pages/analyse_problemstellen.html">
                     <img src="../assets/icons/magnifier.svg" alt="1">
@@ -28,5 +31,9 @@
         <li class="link">
             <a href="../pages/fazit.html">Fazit</a>
         </li>
+        <div id="current">None</div>
+        <script>
+            document.getElementById("current").innerHTML = document.title.split(' - ')[1];
+        </script>
     </ul>
 </div>

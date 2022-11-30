@@ -9,8 +9,14 @@ body {
     margin-top: 90px;
     margin-left: 60px;
     padding: 0;
+    margin-bottom: 100px;
 }
 body h1 {
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.source {
+    font-size: smaller;
+    color: gray;
+    text-decoration: none;
 }

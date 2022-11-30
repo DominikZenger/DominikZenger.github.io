@@ -31,12 +31,24 @@ Sidebar styles
     float: left;
     min-width: 250px;
     padding: 10px 10px 10px 10px;
+    user-select: none;
     cursor: default;
 }
 .dropdown-title {
     font-weight: bold;
     color: var(--color);
     font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-title img {
+    width: 35px;
+    margin-right: 10px;
+    transform: rotate(-90deg);
+    transition: all .1s ease-in-out;
+}
+.dropdown:hover .dropdown-title img {
+    transform: rotate(0deg);
 }
 .dropdown-content {
     display: none;
@@ -64,14 +76,33 @@ Sidebar styles
 .link {
     float: left;
     min-width: 250px;
-    padding: 10px 10px 10px 10px;
+    user-select: none;
     cursor: pointer;
+    position: relative;
 }
 .link a {
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
     color: var(--color);
+    padding: 10px 10px 11px 10px;
+    display: flex;
+    size: 100%;
+}
+#current {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 56px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: default;
 }
 
 .dropdown-content a:hover {
