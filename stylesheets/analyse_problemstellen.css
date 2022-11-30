@@ -1,0 +1,87 @@
+#map {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    --circle-size: 40px; /* Absolute value (e.g. 25px) */
+    --map-scale: 1.2; /* Relative value, (e.g. 1 = width of 698px) */
+    --xOffset: 440px;
+}
+
+
+.circle {
+    position: absolute;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    margin: calc(-0.5 * var(--circle-size));
+    background-color: red;
+    border-radius: 50%;
+    opacity: 50%;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+.circle:hover {
+    transform: scale(2, 2);
+}
+
+#c0 {
+    left: calc(254px * var(--map-scale) + var(--xOffset));
+    top: calc(429px * var(--map-scale));
+}
+#c1 {
+    left: calc(387px * var(--map-scale) + var(--xOffset));
+    top: calc(340px * var(--map-scale));
+}
+#c2 {
+    left: calc(373px * var(--map-scale) + var(--xOffset));
+    top: calc(152px * var(--map-scale));
+}
+#c3 {
+    left: calc(455px * var(--map-scale) + var(--xOffset));
+    top: calc(80px * var(--map-scale));
+}
+#c4 {
+    left: calc(502px * var(--map-scale) + var(--xOffset));
+    top: calc(105px * var(--map-scale));
+}
+
+#legend {
+    position: relative;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 50px;
+    border: 3px solid black;
+    background: linear-gradient(90deg, #92D050 20%, #F9DC05 40%, #F9BB00 60%, #FA8504 80%, #FF0000 100%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#legend #free {
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    font-weight: bold;
+}
+#legend #traffic {
+    position: absolute;
+    right: 0;
+    bottom: -28px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 170px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 10px 5px 10px 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+html{
+    scroll-behavior:smooth;
+}

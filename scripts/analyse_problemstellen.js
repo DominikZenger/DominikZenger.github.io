@@ -1,5 +1,8 @@
 var currentlyClicked = -1;
 
+let selectedGridItem = 0
+
+
 function selectArea(id) {
     allCirclesRed();
     allInfosInvisible();
@@ -10,13 +13,14 @@ function selectArea(id) {
     }
     currentlyClicked = id;
 
-    let name = document.getElementById("name");
-    let infos = document.getElementById("infos").children;
-    let circles = document.getElementsByClassName("circle");
+    const name = document.getElementById("name");
+    const infos = document.getElementById("infos").children;
+    const circles = document.getElementsByClassName("circle");
 
     circles[id].style.backgroundColor = "blue";
-    setVisible(infos[id], true); 
+    setVisible(infos[id], true);
     setVisible(name, true);
+    setVisible(document.getElementById("base-infos"), true);
     let container;
     switch(id) {
         case 0: 
@@ -24,6 +28,7 @@ function selectArea(id) {
             container = document.getElementById("grid1");
             if (!container.lastElementChild) {
                 createGrid(colorGridFeldkirchenerKreuzung, container);
+                select(selectedGridItem);
             }
             window.scrollTo(0, 1000);
             break;
@@ -32,6 +37,7 @@ function selectArea(id) {
             container = document.getElementById("grid2");
             if (!container.lastElementChild) {
                 createGrid(colorGridAmmerthal, container);
+                select(selectedGridItem);
             }
             window.scrollTo(0, 1000);
             break;
@@ -40,6 +46,7 @@ function selectArea(id) {
             container = document.getElementById("grid3");
             if (!container.lastElementChild) {
                 createGrid(colorGridEi, container);
+                select(selectedGridItem);
             }
             window.scrollTo(0, 1000);
             break;
@@ -48,6 +55,7 @@ function selectArea(id) {
             container = document.getElementById("grid4");
             if (!container.lastElementChild) {
                 createGrid(colorGridKirchheimerKreuzung, container);
+                select(selectedGridItem);
             }
             window.scrollTo(0, 1000);
             break;
@@ -56,6 +64,7 @@ function selectArea(id) {
             container = document.getElementById("grid5");
             if (!container.lastElementChild) {
                 createGrid(colorGridflorianStrasse, container);
+                select(selectedGridItem);
             }
             window.scrollTo(0, 1000);
             break;
@@ -64,6 +73,7 @@ function selectArea(id) {
 
 function allInfosInvisible() {
     setVisible(document.getElementById("name"), false);
+    setVisible(document.getElementById("base-infos"), false);
     let infos = document.getElementById("infos").children;
     for(var i = 0; i < infos.length; i++) {
         setVisible(infos[i], false);
@@ -80,11 +90,13 @@ function allCirclesRed() {
         circles[i].style.backgroundColor = "red";
     }
 }
+
 const green = "#92D050"
 const yellow = "#F9DC05"
 const darkorange = "#FA8504"
 const brightorange = "#F9BB00"
 const red = "#FF0000"
+
 let colorGridFeldkirchenerKreuzung = [
     ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000"],
     ["#C1C1C1", green, yellow, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, brightorange, yellow, green, green, green, yellow],
@@ -175,6 +187,7 @@ function createGrid(colorGrid, container) {
 
 }
 function select(i) {
+    selectedGridItem = i;
     const items = document.getElementsByClassName("grid-item");
     for (let r = 0; r < items.length; r++) {
         items.item(r).style.opacity = "1";

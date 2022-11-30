@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="uTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../stylesheets/basecontent.css">
     <link rel="stylesheet" href="../stylesheets/menu.css">
     <link rel="stylesheet" href="../stylesheets/verkehrszaehlung.css">
     <script src="../scripts/verkehrszaehlung.js"></script>
-    <title>Verkehrszählung</title>
+    <title>Mobilität der Zukunft - Verkehrszählung</title>
 </head>
 <body>
     <!-- https://api.jquery.com/load/ -->
@@ -14,89 +14,89 @@
     <div id="menu"></div>
     <script type="text/javascript">$("#menu").load("../includes/menu.html");</script>
 
-    <h1>Verkehrszählung</h1>
-    <div id="quiz">
-        <p id="result"></p>
-        <div id="quiz1">
-            <div class="wrapper">
-                <div class="question">
-                    <p>Wann ist das höchste Verkehrsaufkommen auf unseren Straßen?</p>
-                    <input type="radio" name="q1" id="q1a1">
-                    <label for="q1a1">07.00 Uhr – 08.00 Uhr</label><br>
-                    <input type="radio" name="q1" id="q1a2">
-                    <label for="q1a2">12.00 Uhr – 13.00 Uhr</label><br>
-                    <input type="radio" name="q1" id="q1a3">
-                    <label for="q1a3">17.00 Uhr – 18.00 Uhr</label><br>
-                    <input type="radio" name="q1" id="q1a4">
-                    <label for="q1a4">23.00 Uhr – 00.00 Uhr</label><br>
-                    <p id="result1" class="result"></p>
+    <div class="wrapper">
+        <h1>Verkehrszählung</h1>
+        <div id="quiz">
+            <p id="result"></p>
+            <div id="quiz1">
+                <div class="question-wrapper">
+                    <div class="question">
+                        <p>Wann ist das höchste Verkehrsaufkommen auf unseren Straßen?</p>
+                        <input type="radio" name="q1" id="q1a1">
+                        <label for="q1a1">07.00 Uhr – 08.00 Uhr</label><br>
+                        <input type="radio" name="q1" id="q1a2">
+                        <label for="q1a2">12.00 Uhr – 13.00 Uhr</label><br>
+                        <input type="radio" name="q1" id="q1a3">
+                        <label for="q1a3">17.00 Uhr – 18.00 Uhr</label><br>
+                        <input type="radio" name="q1" id="q1a4">
+                        <label for="q1a4">23.00 Uhr – 00.00 Uhr</label><br>
+                        <p id="result1" class="result"></p>
+                    </div>
+                    <img src="../assets/images/verkehrszaehlung_frage_1.jpg" alt="Bild 1">
                 </div>
-                <img src="../assets/images/verkehrszaehlung_frage_1.jpg" alt="Bild 1">
-                <i>https://pixabay.com/de/photos/verkehr-stau-stop-and-go-rush-hour-143391/</i>
             </div>
-        </div>
-        <div id="quiz2">
-            <div class="wrapper">
-                <div class="question">
-                    <p>Wie hoch ist der Elektro- / Hybridautoanteil im Straßenverkehr?</p>
-                    <input type="radio" name="q2" id="q2a1">
-                    <label for="q2a1">2%</label><br>
-                    <input type="radio" name="q2" id="q2a2">
-                    <label for="q2a2">5%</label><br>
-                    <input type="radio" name="q2" id="q2a3">
-                    <label for="q2a3">10%</label><br>
-                    <input type="radio" name="q2" id="q2a4">
-                    <label for="q2a4">20%</label><br>
-                    <p id="result2" class="result"></p>
+            <div id="quiz2">
+                <div class="question-wrapper">
+                    <div class="question">
+                        <p>Wie hoch ist der Elektro- / Hybridautoanteil im Straßenverkehr?</p>
+                        <input type="radio" name="q2" id="q2a1">
+                        <label for="q2a1">2%</label><br>
+                        <input type="radio" name="q2" id="q2a2">
+                        <label for="q2a2">5%</label><br>
+                        <input type="radio" name="q2" id="q2a3">
+                        <label for="q2a3">10%</label><br>
+                        <input type="radio" name="q2" id="q2a4">
+                        <label for="q2a4">20%</label><br>
+                        <p id="result2" class="result"></p>
+                    </div>
+                    <img src="../assets/images/verkehrszaehlung_frage_2.jpg" alt="Bild 2">
                 </div>
-                <img src="../assets/images/verkehrszaehlung_frage_2.jpg" alt="Bild 2">
-                <i>https://pixabay.com/de/photos/carsharing-elektroauto-auto-smart-4382651/</i>
             </div>
-        </div>
-        <div id="quiz3">
-            <div class="wrapper">
-                <div class="question">
-                    <p>Angenommen es fahren aktuell 1000 Autos auf der Autobahn, <br>
-                        wie viele sind dann zeitgleich auf Landstraßen unterwegs?</p>
-                    <input type="radio" name="q3" id="q3a1">
-                    <label for="q3a1">200</label><br>
-                    <input type="radio" name="q3" id="q3a2">
-                    <label for="q3a2">400</label><br>
-                    <input type="radio" name="q3" id="q3a3">
-                    <label for="q3a3">750</label><br>
-                    <input type="radio" name="q3" id="q3a4">
-                    <label for="q3a4">900</label><br>
-                    <p id="result3" class="result"></p>
+            <div id="quiz3">
+                <div class="question-wrapper">
+                    <div class="question">
+                        <p>Angenommen es fahren aktuell 1000 Autos auf der Autobahn, <br>
+                            wie viele sind dann zeitgleich auf Landstraßen unterwegs?</p>
+                        <input type="radio" name="q3" id="q3a1">
+                        <label for="q3a1">200</label><br>
+                        <input type="radio" name="q3" id="q3a2">
+                        <label for="q3a2">400</label><br>
+                        <input type="radio" name="q3" id="q3a3">
+                        <label for="q3a3">750</label><br>
+                        <input type="radio" name="q3" id="q3a4">
+                        <label for="q3a4">900</label><br>
+                        <p id="result3" class="result"></p>
+                    </div>
+                    <img src="../assets/images/verkehrszaehlung_frage_3.jpg" alt="Bild 3">
                 </div>
-                <img src="../assets/images/verkehrszaehlung_frage_3.jpg" alt="Bild 3">
-                <i>https://pixabay.com/de/photos/fu%c3%9fballstadion-autobahn-nacht-3404535/</i>
             </div>
-        </div>
-        <div id="quiz4">
-            <div class="wrapper">
-                <div class="question">
-                    <p>Wie hoch ist der Anteil der LKWs am Autobahnverkehr?</p>
-                    <input type="radio" name="q4" id="q4a1">
-                    <label for="q4a1">5%</label><br>
-                    <input type="radio" name="q4" id="q4a2">
-                    <label for="q4a2">15%</label><br>
-                    <input type="radio" name="q4" id="q4a3">
-                    <label for="q4a3">25%</label><br>
-                    <input type="radio" name="q4" id="q4a4">
-                    <label for="q4a4">50%</label><br>
-                    <p id="result4" class="result"></p>
+            <div id="quiz4">
+                <div class="question-wrapper">
+                    <div class="question">
+                        <p>Wie hoch ist der Anteil der LKWs am Autobahnverkehr?</p>
+                        <input type="radio" name="q4" id="q4a1">
+                        <label for="q4a1">5%</label><br>
+                        <input type="radio" name="q4" id="q4a2">
+                        <label for="q4a2">15%</label><br>
+                        <input type="radio" name="q4" id="q4a3">
+                        <label for="q4a3">25%</label><br>
+                        <input type="radio" name="q4" id="q4a4">
+                        <label for="q4a4">50%</label><br>
+                        <p id="result4" class="result"></p>
+                    </div>
+                    <img src="../assets/images/verkehrszaehlung_frage_4.jpg" alt="Bild 4">
                 </div>
-                <img src="../assets/images/verkehrszaehlung_frage_4.jpg" alt="Bild 4">
-                <i>https://pixabay.com/de/photos/autobahn-stra%c3%9fe-lkw-fahrzeuge-3392100/</i>
             </div>
+            <div id="button" onclick="submit()">Überprüfen</div>
         </div>
-        <div id="button" onclick="submit()">Überprüfen</div>
+
+        <div id="infos">
+            Hier können Informationen, Graphen, etc. hin.
+        </div>
+
+        <script>document.getElementById("infos").style.display = "none";</script>
     </div>
 
-    <div id="infos">
-        Hier können Informationen, Graphen, etc. hin.
-    </div> 
 
-    <script>document.getElementById("infos").style.display = "none";</script>
 </body>
 </html>

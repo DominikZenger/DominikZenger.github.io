@@ -15,15 +15,19 @@ function select(n) {
 
     switch(n) {
         case 0: 
+            overlay.style.display = "none";
             overlay.src = "";
             break;
         case 1:
+            overlay.style.display = "block";
             overlay.src = "../assets/images/map_oepnv.png";
             break;
         case 2:
+            overlay.style.display = "block";
             overlay.src = "../assets/images/map_car.png";
             break;
         case 3:
+            overlay.style.display = "block";
             overlay.src = "../assets/images/map_bicycle.png";
             break;
     }

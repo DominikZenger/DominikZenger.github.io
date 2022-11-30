@@ -6,10 +6,36 @@ body {
     font-family: Arial, sans-serif;
     font-size: 20px;
     color: black;
-    margin-top: 30px;
-    margin-left: 130px;
-    padding: 0;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-bottom: 70px;
+    background-color: #41464D;
 }
 body h1 {
-    font-size: 50px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.source {
+    font-size: smaller;
+    color: gray;
+    text-decoration: none;
+    font-style: italic;
+    margin-top: 0;
+}
+.wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-content: center;
+    width: 90%;
+    background-color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: max-content;
+    margin-bottom: 30px;
+}
+.text-wrapper {
+    text-align: left;
+    margin-bottom: 30px;
 }

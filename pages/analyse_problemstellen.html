@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../stylesheets/basecontent.css">
+    <link rel="stylesheet" href="../stylesheets/menu.css">
+    <link rel="stylesheet" href="../stylesheets/analyse_problemstellen.css">
+    <script src="../scripts/analyse_problemstellen.js"></script>
+    <title>Mobilität der Zukunft - Analyse Problemstellen</title>
+</head>
+<body>
+    <!-- https://api.jquery.com/load/ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="menu"></div>
+    <script type="text/javascript">$("#menu").load("../includes/menu.html");</script>
+    <div class="wrapper">
+        <h1>Verkehrsaufkommen an kritischen Stellen rund um Kirchheim, Feldkirchen und Aschheim</h1>
+        <!--
+            0 = Feldkirchner-Kreuzung
+            1 = Kreuzung Ammerthalstraße und Feldkirchner Straße
+            2 = Kirchheimer-Ei
+            3 = Kirchheimer-Kreuzung
+            4 = Florianstraße
+        -->
+        <p>Abbildung der Gemeinden Kirchheim, Feldkirchen und Aschheim.</p>
+        <div id="map">
+            <img src="../assets/images/Verkehrsanalyse_Map.png" alt="Verkehrsanalyse Karte" style="width: calc(var(--map-scale) * 698px);">
+            <div class="circle" id="c0" onclick="selectArea(0)" title="Feldkirchner-Kreuzung"></div>
+            <div class="circle" id="c1" onclick="selectArea(1)" title="Kreuzung Ammerthalstraße und Feldkirchner Straße"></div>
+            <div class="circle" id="c2" onclick="selectArea(2)" title="Kirchheimer-Ei"></div>
+            <div class="circle" id="c3" onclick="selectArea(3)" title="Kirchheimer-Kreuzung"></div>
+            <div class="circle" id="c4" onclick="selectArea(4)" title="Florianstraße"></div>
+            <p class="source">Quelle: Google Maps</p>
+        </div>
+        <br>
+        <h2 id="name">Name</h2>
+        <div id="base-infos">
+            <p>
+                Eine Analyse der Verkehrsdaten von Google Maps, eingeteilt in Wochentag und Uhrzeit.
+                <br>
+                <br>
+                <b>Zeitraum:</b> Frühling 2022
+            </p>
+            <br>
+            <div id="infos">
+                <div>
+                    <div class="grid-container" id="grid1"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid2"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid3"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid4"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid5"></div>
+                </div>
+            </div>
+            <div id="legend">
+                <div id="free">Frei</div>
+                <div id="traffic">Stau</div>
+            </div>
+        </div>
+
+        <script>allInfosInvisible()</script>
+    </div>
+
+</body>
+</html>
