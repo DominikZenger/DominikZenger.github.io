@@ -1,54 +1,66 @@
-let currentQuestion = 0;
-let questions;
+function submit() {
+    document.querySelectorAll('input[type=radio]').forEach(answer => {
+        answer.disabled = true;
+    });
 
-function next() {
-    currentQuestion++;
-    switch(currentQuestion) {
+    const datasets = [
+        [document.querySelector('input[name="q1"]:checked'), "q1a3", document.getElementById("result1")],
+        [document.querySelector('input[name="q2"]:checked'), "q2a2", document.getElementById("result2")],
+        [document.querySelector('input[name="q3"]:checked'), "q3a3", document.getElementById("result3")],
+        [document.querySelector('input[name="q4"]:checked'), "q4a2", document.getElementById("result4")]
+    ]
+
+    let correct = 0;
+    for(let i = 0; i < datasets.length; i++) {
+        dataset = datasets[i];
+        document.getElementById(dataset[1]).nextElementSibling.style.color = "green";
+
+        if(dataset[0] === null) {
+            continue;
+        }
+
+        if(dataset[0].id === dataset[1]) {
+            dataset[2].innerHTML = "RICHTIG";
+            dataset[2].style.color = "green";
+            correct++;
+        } else {
+            dataset[2].innerHTML = "FALSCH";
+            dataset[2].style.color = "red";
+            dataset[0].nextElementSibling.style.color = "red";
+        }
+    }
+
+    const result = document.getElementById("result");
+    if(correct === 1) {
+        result.innerHTML = "Sie haben 1 Frage richtig beantwortet!";
+    } else {
+        result.innerHTML = "Sie haben " + correct + " Fragen richtig beantwortet!";
+    }
+    result.style.border = "3px solid black";
+
+    switch(correct) {
+        case 0:
+            result.style.backgroundColor = "#F0BBC2";
+            result.style.color = "#9C0006";
+            result.style.borderColor = "#9C0006";
+            break;
         case 1:
-            setVisible(questions[0], false);
-            setVisible(questions[1], true);
-            break;
         case 2:
-            setVisible(questions[1], false);
-            setVisible(questions[2], true);
-            break;
         case 3:
-            setVisible(questions[2], false);
-            setVisible(questions[3], true);
-            break;
         case 4:
-            setVisible(questions[3], false);
-            document.getElementById("result").innerHTML = "Du hast " + countCorrect() + " Fragen richtig beantwortet!";
-            setVisible(document.getElementById("infos"), true);
-            showResults();
+            result.style.backgroundColor = "#C1E9C9";
+            result.style.color = "#006100";
+            result.style.borderColor = "#006100";
             break;
     }
+
+    document.getElementById("button").innerHTML = "Weiter";
+    document.getElementById("button").onclick = next;
+
+    window.scrollTo(0, 0);
 }
 
-function quizStart() {
-    questions = [
-        document.getElementById("quiz1"),
-        document.getElementById("quiz2"),
-        document.getElementById("quiz3"),
-        document.getElementById("quiz4")
-    ];
-    
-    setVisible(questions[1], false);
-    setVisible(questions[2], false);
-    setVisible(questions[3], false);
-    
-    setVisible(document.getElementById("infos"), false);
-}
-
-function countCorrect() {
-    count = 0;
-    document.getElementById("q1a3").checked ? count++ : null;
-    document.getElementById("q2a2").checked ? count++ : null;
-    document.getElementById("q3a3").checked ? count++ : null;
-    document.getElementById("q4a2").checked ? count++ : null;
-    return count;
-}
-
-function setVisible(element, visible) {
-    element.style.display = visible ? "" : "none";
+function next() {
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("infos").style.display = "";
 }
