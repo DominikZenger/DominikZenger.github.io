@@ -195,6 +195,9 @@ function select(i) {
     if (parseInt(i) === 0) {
         return
     }
+    if (parseInt(i) === selectedGridItem) {
+        return
+    }
     const row = Math.floor(parseInt(i) / 18);
     const column = parseInt(i) % 18;
     for (let r = 0; r < items.length; r++) {

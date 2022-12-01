@@ -40,4 +40,5 @@ body h1 {
 .text-wrapper {
     text-align: left;
     margin-bottom: 30px;
+    width: 90%;
 }
