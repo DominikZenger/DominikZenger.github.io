@@ -1,10 +1,15 @@
 #map {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
     margin: 0;
     padding: 0;
-    position: relative;
     --circle-size: 40px; /* Absolute value (e.g. 25px) */
     --map-scale: 1.2; /* Relative value, (e.g. 1 = width of 698px) */
-    --xOffset: 440px;
+    /*--xOffset: 50%;*/
+
+    width: fit-content;
 }
 
 
@@ -18,29 +23,30 @@
     opacity: 50%;
     transition: all .1s ease-in-out;
     cursor: pointer;
+
 }
 .circle:hover {
     transform: scale(2, 2);
 }
 
 #c0 {
-    left: calc(254px * var(--map-scale) + var(--xOffset));
     top: calc(429px * var(--map-scale));
+    left: calc(254px * var(--map-scale))
 }
 #c1 {
-    left: calc(387px * var(--map-scale) + var(--xOffset));
+    left: calc(387px * var(--map-scale));
     top: calc(340px * var(--map-scale));
 }
 #c2 {
-    left: calc(373px * var(--map-scale) + var(--xOffset));
+    left: calc(373px * var(--map-scale));
     top: calc(152px * var(--map-scale));
 }
 #c3 {
-    left: calc(455px * var(--map-scale) + var(--xOffset));
+    left: calc(455px * var(--map-scale));
     top: calc(80px * var(--map-scale));
 }
 #c4 {
-    left: calc(502px * var(--map-scale) + var(--xOffset));
+    left: calc(502px * var(--map-scale));
     top: calc(105px * var(--map-scale));
 }
 
