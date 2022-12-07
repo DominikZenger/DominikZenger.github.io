@@ -29,16 +29,19 @@ body h1 {
     text-align: center;
     align-content: center;
     width: 90%;
+    /*bottom: 100px;*/
     /*margin-right: 5%;*/
     /*margin-left: 5%;*/
     background-color: #FFFFFF;
     padding-left: 40px;
     padding-right: 40px;
     height: max-content;
-    margin-bottom: 30px;
 }
 .text-wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: left;
     margin-bottom: 30px;
-    width: 90%;
+    width: 80%;
 }
