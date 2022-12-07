@@ -16,6 +16,7 @@ function selectArea(id) {
     const name = document.getElementById("name");
     const infos = document.getElementById("infos").children;
     const circles = document.getElementsByClassName("circle");
+    const description = document.getElementById("description");
 
     circles[id].style.backgroundColor = "blue";
     setVisible(infos[id], true);
@@ -25,6 +26,7 @@ function selectArea(id) {
     switch(id) {
         case 0: 
             name.innerHTML = "Feldkirchner-Kreuzung";
+            description.innerHTML = Feldkirchner_Kreuzung_description;
             container = document.getElementById("grid1");
             if (!container.lastElementChild) {
                 createGrid(colorGridFeldkirchenerKreuzung, container);
@@ -34,6 +36,7 @@ function selectArea(id) {
             break;
         case 1:
             name.innerHTML = "Kreuzung Ammerthalstraße und Feldkirchner Straße";
+            description.innerHTML = Ammerthalstrasse_description;
             container = document.getElementById("grid2");
             if (!container.lastElementChild) {
                 createGrid(colorGridAmmerthal, container);
@@ -43,6 +46,7 @@ function selectArea(id) {
             break;
         case 2: 
             name.innerHTML = "Kirchheimer-Ei";
+            description.innerHTML = Kirchheimer_Ei_description;
             container = document.getElementById("grid3");
             if (!container.lastElementChild) {
                 createGrid(colorGridEi, container);
@@ -52,6 +56,7 @@ function selectArea(id) {
             break;
         case 3: 
             name.innerHTML = "Kirchheimer-Kreuzung";
+            description.innerHTML = Kirchheimer_Kreuzung_description;
             container = document.getElementById("grid4");
             if (!container.lastElementChild) {
                 createGrid(colorGridKirchheimerKreuzung, container);
@@ -61,6 +66,7 @@ function selectArea(id) {
             break;
         case 4: 
             name.innerHTML = "Florianstraße";
+            description.innerHTML = Florianstrasse_description
             container = document.getElementById("grid5");
             if (!container.lastElementChild) {
                 createGrid(colorGridflorianStrasse, container);
@@ -207,3 +213,42 @@ function select(i) {
     }
 
 }
+
+
+
+
+const Feldkirchner_Kreuzung_description = "Die Kreuzung in der Mitte der Gemeinde Feldkirchen ist von zentraler\n" +
+    "Bedeutung für Einwohner und Pendler. Vor allem unter der Woche ist sie von\n" +
+    "früh morgens ab 7 Uhr bis 20 Uhr abends konstant mittelstark ausgelastet. Am\n" +
+    "Abend zum Berufsverkehr hin kommt es oftmals zu stockendem Verkehr und\n" +
+    "gelegentlich zu kleinen Staus.\n" +
+    "Anlässlich der allgemein hohen Zuwachsrate der Bevölkerung im näheren\n" +
+    "Umkreis und dem einhergehenden stetigen Ausbau des ÖPNV mit neuen Bus-\n" +
+    "verbindungen ist in näherer Zukunft eine Zuspitzung des Verkehrs an dieser\n" +
+    "zentral gelegenen Kreuzung zu erwarten."
+
+const Ammerthalstrasse_description = "Die Kreuzung in der Mitte der Gemeinde Feldkirchen ist von zentraler\n" +
+    "Bedeutung für Einwohner und Pendler. Vor allem unter der Woche ist sie von\n" +
+    "früh morgens ab 7 Uhr bis 20 Uhr abends konstant mittelstark ausgelastet. Am\n" +
+    "Abend zum Berufsverkehr hin kommt es oftmals zu stockendem Verkehr und\n" +
+    "gelegentlich zu kleinen Staus.\n" +
+    "Anlässlich der allgemein hohen Zuwachsrate der Bevölkerung im näheren\n" +
+    "Umkreis und dem einhergehenden stetigen Ausbau des ÖPNV mit neuen Bus-\n" +
+    "verbindungen ist in näherer Zukunft eine Zuspitzung des Verkehrs an dieser\n" +
+    "zentral gelegenen Kreuzung zu erwarten."
+
+const Kirchheimer_Ei_description = "Das „Kirchheimer-Ei“ ist eine in der Gegend gut bekannte Bezeichnung für die\n" +
+    "viel befahrene oval geformte ikonische Kreuzung der Staatsstraße-2082 und\n" +
+    "dem Heimstettener-Moosweg. Sie steht schon seit vielen Jahren unter Kritik\n" +
+    "und wurde schon einige Male umgebaut. Dies Veränderungen haben bisher\n" +
+    "jedoch nicht viel an den teils chaotischen Zuständen verändert. Besonders am\n" +
+    "Morgen gegen 8 Uhr und am Abend von 16 bis 18 Uhr bildet sich ein enormer\n" +
+    "Rückstau an den beiden Kreuzungseinmündungen des Heimstettener-\n" +
+    "Mooswegs. Dieser führt teils bis zu über 30 Minuten Zeitverlust und ist für die\n" +
+    "Betroffenen nicht weiter hinnehmbar. Der Bau von neuen Wohnblocks in\n" +
+    "direkter nähe zu der Kreuzung und die für 2024 geplante Landesgartenschau in\n" +
+    "der Gemeinde Kirchheim könnten zu einem endgültigem Verkehrskollaps an\n" +
+    "dieser Stelle führen."
+const Florianstrasse_description = ""
+const Kirchheimer_Kreuzung_description = ""
+
