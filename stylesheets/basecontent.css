@@ -35,7 +35,8 @@ body h1 {
     background-color: #FFFFFF;
     padding-left: 40px;
     padding-right: 40px;
-    height: max-content;
+    padding-bottom: 3%;
+    height: available;
 }
 .text-wrapper {
     position: relative;

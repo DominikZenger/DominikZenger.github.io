@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mobilität der Zukunft - Verkehrsnutzung</title>
-    <script src="../scripts/vergleich_quiz.js"></script>
+    <script src="../scripts/schulweg_vergleich.js"></script>
     <link rel="stylesheet" href="../stylesheets/basecontent.css">
     <link rel="stylesheet" href="../stylesheets/menu.css">
     <link rel="stylesheet" href="../stylesheets/schulweg_vergleich.css">
@@ -34,9 +34,21 @@
     <div class="text-wrapper">
         In dieser Umfrage, die Sie gerade zum Teil beantwortet haben, wurde die Q11 des Gymnasiums Kirchheim befragt zu ihrer Verkehrsnutzung. Die Umfrage fand zweimal statt: einmal im Sommer und einmal im Winter. Anschließend wurden die Ergebnisse beider Umfragen miteinander verglichen, um herauszufinden in welcher Jahreszeit der Verkehr schädlicher für die Umwelt ist.
     </div>
-        <img id="winter" src="../assets/images/winter.png" alt="">
-        <img id="sommer" src="../assets/images/sommer.png" alt="">
+    <div id="image-switch">
+        <div class="switch-button">
+            <input class="switch-button-checkbox" type="checkbox" onclick="change()">
+
+            <label class="switch-button-label"></label>
+            <span class="switch-button-label-span" id="summer_label">
+                <b>Sommer</b>
+            </span>
+            <span class="switch-button-label-span" id="winter_label">
+                <b>Winter</b>
+            </span>
+        </div>
+        <img id="bar-diagram" src="../assets/images/sommer.png" alt="">
     </div>
+
 
 
 </div>
