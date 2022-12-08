@@ -13,7 +13,7 @@ function submit() {
     let correct = 0;
     for(let i = 0; i < datasets.length; i++) {
         dataset = datasets[i];
-        document.getElementById(dataset[1]).nextElementSibling.style.color = "green";
+        document.getElementById(dataset[1]).nextElementSibling.style.color = "#006100";
 
         if(dataset[0] === null) {
             continue;
@@ -21,12 +21,12 @@ function submit() {
 
         if(dataset[0].id === dataset[1]) {
             dataset[2].innerHTML = "RICHTIG";
-            dataset[2].style.color = "green";
+            dataset[2].style.color = "#006100";
             correct++;
         } else {
             dataset[2].innerHTML = "FALSCH";
-            dataset[2].style.color = "red";
-            dataset[0].nextElementSibling.style.color = "red";
+            dataset[2].style.color = "#9C0006";
+            dataset[0].nextElementSibling.style.color = "#9C0006";
         }
     }
 
@@ -37,6 +37,7 @@ function submit() {
         result.innerHTML = "Sie haben " + correct + " Fragen richtig beantwortet!";
     }
     result.style.border = "3px solid black";
+    result.style.padding = "1.5vmin 0";
 
     switch(correct) {
         case 0:

@@ -1,70 +1,60 @@
 .question-wrapper {
     position: relative;
+    margin-bottom: 2%;
+    max-width: 800px;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 30px;
-    width: min-content;
-    text-align: left;
-
 }
 .question-wrapper img {
-    width: 1000px;
+    width: 100%;
     opacity: 30%;
 }
-.result {
-    /*margin-top: 100px;*/
-    /*margin-left: 100px;*/
-    font-size: 50px;
-    font-weight: bold;
-    font-style: oblique;
-}
-#result {
-    font-size: 30px;
-    font-style: italic;
-    width: 994px;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.question {
+.question-wrapper .question {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    font-size: min(3.5vmin, 50px);
     z-index: 1;
-    /*margin-left: 30px;*/
-    font-size: 30px;
 }
-.question input {
-    transform: scale(1.5);
-    vertical-align: 4px;
-    margin-bottom: 20px;
+.question-wrapper .question input {
+    transform: scale(150%);
+    vertical-align: 40%;
+}
+.question-wrapper .question .result {
+    font-size: min(5vmin, 70px);
+    font-weight: bold;
+    font-style: oblique;
+    width: 100%;
+    text-align: center;
 }
 
+#result {
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: min(3.5vmin, 50px);
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 2% 0;
+}
 #button {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 30px;
-    margin-bottom: 100px;
-    width: 1000px;
-    height: 50px;
+    max-width: 800px;
     text-align: center;
-    line-height: 50px;
-    background-color: #87ceeb;
-    font-size: 20px;
+    background-color: var(--main-bg-color);
+    padding: 1.5vmin 0;
+    font-size: 3.5vmin;
     font-weight: bold;
     border: 3px solid black;
     user-select: none;
 }
 #button:hover {
-    background-color: #62c1e0;
+    background-color: var(--main-bg-color-hover);
     cursor: pointer;
-}
-
-#infos {
-    margin-top: 30px;
 }

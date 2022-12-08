@@ -3,14 +3,14 @@ Sidebar styles
 */
 
 :root {
-    --bg-color: #C2F9FF;
-    --bg-color-2: #c2d5ff;
+    --main-bg-color: #47A574;
+    --main-bg-color-hover: #39845C;
     --border-color: black;
     --color: black;
 }
 
 #menu {
-    background-color: var(--bg-color);
+    background-color: var(--main-bg-color);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 100%;
     position: fixed;
@@ -53,7 +53,7 @@ Sidebar styles
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--bg-color);
+    background-color: var(--main-bg-color);
     min-width: 500px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     margin-top: 10px;
@@ -106,13 +106,13 @@ Sidebar styles
 }
 
 .dropdown-content a:hover {
-    background-color: var(--bg-color-2);
+    background-color: var(--main-bg-color-hover);
 }
 .dropdown:hover {
-    background-color: var(--bg-color-2);
+    background-color: var(--main-bg-color-hover);
 }
 .link:hover {
-    background-color: var(--bg-color-2);
+    background-color: var(--main-bg-color-hover);
 }
 
 .dropdown:hover .dropdown-content {
