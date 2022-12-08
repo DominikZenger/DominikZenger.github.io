@@ -36,7 +36,7 @@
     background: rgba(80, 80, 80, 0.56);
     border-radius: 30px;
     overflow: hidden;
-    width: 10%;
+    width: 160px;
     text-align: left;
     font-size: 18px;
     letter-spacing: 1px;
@@ -80,4 +80,6 @@
      transform: translateX(0);
      transition: transform 300ms;
  }
-
+b {
+    font-size: 10px;
+}
