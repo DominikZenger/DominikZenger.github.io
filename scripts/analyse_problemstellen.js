@@ -237,18 +237,8 @@ const Ammerthalstrasse_description = "Die Kreuzung in der Mitte der Gemeinde Fel
     "verbindungen ist in näherer Zukunft eine Zuspitzung des Verkehrs an dieser\n" +
     "zentral gelegenen Kreuzung zu erwarten."
 
-const Kirchheimer_Ei_description = "Das „Kirchheimer-Ei“ ist eine in der Gegend gut bekannte Bezeichnung für die\n" +
-    "viel befahrene oval geformte ikonische Kreuzung der Staatsstraße-2082 und\n" +
-    "dem Heimstettener-Moosweg. Sie steht schon seit vielen Jahren unter Kritik\n" +
-    "und wurde schon einige Male umgebaut. Dies Veränderungen haben bisher\n" +
-    "jedoch nicht viel an den teils chaotischen Zuständen verändert. Besonders am\n" +
-    "Morgen gegen 8 Uhr und am Abend von 16 bis 18 Uhr bildet sich ein enormer\n" +
-    "Rückstau an den beiden Kreuzungseinmündungen des Heimstettener-\n" +
-    "Mooswegs. Dieser führt teils bis zu über 30 Minuten Zeitverlust und ist für die\n" +
-    "Betroffenen nicht weiter hinnehmbar. Der Bau von neuen Wohnblocks in\n" +
-    "direkter nähe zu der Kreuzung und die für 2024 geplante Landesgartenschau in\n" +
-    "der Gemeinde Kirchheim könnten zu einem endgültigem Verkehrskollaps an\n" +
-    "dieser Stelle führen."
-const Florianstrasse_description = ""
-const Kirchheimer_Kreuzung_description = ""
+const Kirchheimer_Ei_description = "Das „Kirchheimer-Ei“ ist eine in der Gegend gut bekannte Bezeichnung für die viel befahrene ikonisch oval geformte Kreuzung der Staatsstraße-2082 mit dem Heimstettener-Moosweg. Sie steht schon seit vielen Jahren unter Kritik und wurde schon einige Male umgebaut. Diese Veränderungen haben bisher jedoch nicht viel an den teils chaotischen Zuständen verändert. Besonders am Morgen gegen 8 Uhr und am Abend von 16 bis 18 Uhr bildet sich ein enormer Rückstau an den beiden Kreuzungseinmündungen des Heimstettener-Mooswegs. Dieser führt teils bis zu über 30 Minuten Zeitverlust und ist für die Betroffenen nicht weiter hinnehmbar. Der Bau von neuen Wohnblocks in direkter Nähe zu der Kreuzung und die für 2024 geplante Landesgartenschau in der Gemeinde Kirchheim könnten zu einer weiteren Verschärfung der Situation an dieser Stelle führen."
+const Florianstrasse_description = "Die Florianstraße liegt zwischen dem Kirchheimer-Sportclub und dem Gewerbegebiet Kirchheims. In der eng gebauten Straße ist das Parken auf einer Fahrbahnseite erlaubt. Oftmals sind hier PKW, LKW, Busse und Fahrradfahrer gezwungen gegenseitig aufeinander zuwarten, um aneinander vorbeizukommen. Die Florianstraße kreuzt des Weiteren das Ende der viel befahrenen Staatsstraße-2082 und führt neben dem Kirchheimer Gewerbegebiet auch zu einem Wohnviertel. Dies resultiert in einem hohen Verkehrsaufkommen mit stockendem Verkehr in der Florianstraße.\n<br><br>" +
+    "Die Analyse zeigt unteranderem auch, dass generell am späten Abend und vor allem montags gegen 21 Uhr das Verkehrsaufkommen extrem stark ist und es teils zu Stau kommt. Dies kann natürlich nicht stimmen und beweist: Die von Google-Maps erhobenen Daten zum aktuellen Verkehr können auch Fehler enthalten. Vermutlich ist dieser explizite Fehler durch die vielen parkenden Autos des direktanliegenden Parkplatzes des KSC ausgelöst worden.\n"
+const Kirchheimer_Kreuzung_description = "Die zentral gelegene Hauptkreuzung Kirchheims ist ein Durchgangsknotenpunkt für viele Autofahrer aus den umliegenden Ortschaften. Die aus Pflastersteinen und eng gebaute Kreuzung ist tagsüber meist mittelstark befahren. Besonders zur Mittagszeit ist das Verkehrsaufkommen überdurchschnittlich hoch und es kommt zu stockendem Verkehr. Gerade die dort in engem Takt verkehrenden Busse der Linien 263, 262 und 263V kommen meist nur langsam um die Kurve und verlangsamen den Verkehrsfluss. Fußgänger müssen sich mit den anderen Verkehrsteilnehmern aufgrund von nicht vorhandenen Zebrastreifen und Ampeln per Gestik oder Blickkontakt absprechen. Dies vereinfacht die Gesamtsituation an dieser Kreuzung nicht. Sie ist insgesamt nicht mehr für den heutigen Verkehr ausgelegt."
 

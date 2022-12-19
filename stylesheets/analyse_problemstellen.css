@@ -12,7 +12,6 @@
     width: fit-content;
 }
 
-
 .circle {
     position: absolute;
     width: var(--circle-size);
@@ -88,6 +87,7 @@
     display: flex;
     justify-content: center;
 }
+
 html{
     scroll-behavior:smooth;
 }
