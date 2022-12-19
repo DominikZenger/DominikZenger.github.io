@@ -35,18 +35,61 @@
         In dieser Umfrage, die Sie gerade zum Teil beantwortet haben, wurde die Q11 des Gymnasiums Kirchheim befragt zu ihrer Verkehrsnutzung. Die Umfrage fand zweimal statt: einmal im Sommer und einmal im Winter. Anschließend wurden die Ergebnisse beider Umfragen miteinander verglichen, um herauszufinden in welcher Jahreszeit der Verkehr schädlicher für die Umwelt ist.
     </div>
     <div id="image-switch">
-        <div class="switch-button">
-            <input class="switch-button-checkbox" type="checkbox" onclick="change()">
 
-            <label class="switch-button-label"></label>
-            <span class="switch-button-label-span" id="summer_label">
-                <b>Sommer</b>
-            </span>
-            <span class="switch-button-label-span" id="winter_label">
-                <b>Winter</b>
-            </span>
-        </div>
-        <img id="bar-diagram" src="../assets/images/sommer.png" alt="">
+        <table class="graph">
+            <caption>
+<!--                Schulweg-->
+                <div class="switch-button">
+                    <input class="switch-button-checkbox" type="checkbox" onclick="change()">
+
+                    <label class="switch-button-label"></label>
+                    <span class="switch-button-label-span" id="summer_label">
+                        <b>Sommer</b>
+                    </span>
+                    <span class="switch-button-label-span" id="winter_label">
+                        <b>Winter</b>
+                    </span>
+                </div>
+
+            </caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Fahrzeug</th>
+                    <th scope="col">Anzahl</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr style="height:8%" id="Auto">
+                    <th scope="row">Auto</th>
+                    <td><span>4</span></td>
+                </tr>
+                <tr style="height:0" id="E-Auto">
+                    <th scope="row">E-Auto</th>
+                    <td><span>0</span></td>
+                </tr>
+                <tr style="height:8%" id="Motorrad">
+                    <th scope="row">Motorrad</th>
+                    <td><span>4</span></td>
+                </tr>
+                <tr style="height:78%" id="Fahrrad">
+                    <th scope="row">Fahrrad</th>
+                    <td><span>39</span></td>
+                </tr>
+                <tr style="height:20%" id="OPNV">
+                    <th scope="row">ÖPNV</th>
+                    <td><span>10</span></td>
+                </tr>
+                <tr style="height:10%" id="Sonstiges">
+                    <th scope="row">Sonstiges</th>
+                    <td><span>5</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
     </div>
 
 
