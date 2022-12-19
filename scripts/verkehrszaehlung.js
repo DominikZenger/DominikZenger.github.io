@@ -65,3 +65,11 @@ function next() {
     document.getElementById("quiz").style.display = "none";
     document.getElementById("infos").style.display = "";
 }
+
+function scroll_to_question(question) {
+    scrollTo({
+        top: document.getElementById('quiz'.concat(question)).getBoundingClientRect().top + window.scrollY  - (screen.width < 750 ? 150 : 80),
+        left: 0,
+        behavior: 'smooth'
+    })
+}

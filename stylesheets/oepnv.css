@@ -16,16 +16,11 @@
     opacity: 50%;
     z-index: 2;
 }
-#source_map {
-    position: relative;
-    color: gray;
-    font-size: smaller;
-    font-style: italic;
-    bottom: -22%;
-    margin-top: 0;
+#source-map {
     margin-bottom: 3%;
+    margin-top: -0.5%;
 }
-.oepnv_icon {
+.oepnv-icon {
     position: absolute;
     display: block;
     bottom: 0px;
@@ -37,24 +32,24 @@
     z-index: 3;
     -webkit-user-drag: none;
 }
-.oepnv_icon:hover {
+.oepnv-icon:hover {
     background-color: lightgray;
 }
-#legende_all:hover #legende {
+#legend-all:hover #legend {
     display: block;
 }
-#legende {
+#legend {
     position: absolute;
     display: none;
     z-index: 3;
     bottom: 0;
-    right: 52px;
+    right: 3.85%;
     padding: 10px 15px 10px 15px;
     background-color: white;
     border: 2px solid black;
     user-select: none;
 }
-#legende div {
+#legend div {
     margin: 5px 0 5px 0;
 }
 #pin {

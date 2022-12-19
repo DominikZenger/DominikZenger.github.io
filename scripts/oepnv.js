@@ -1,8 +1,8 @@
 const icons = [
-    [document.getElementById("icon_map"), "../assets/icons/map_w.svg", "../assets/icons/map_b.svg"],
-    [document.getElementById("icon_oepnv"), "../assets/icons/oepnv_w.svg", "../assets/icons/oepnv_b.svg"],
-    [document.getElementById("icon_car"), "../assets/icons/car_w.svg", "../assets/icons/car_b.svg"],
-    [document.getElementById("icon_bicycle"), "../assets/icons/bicycle_w.svg", "../assets/icons/bicycle_b.svg"]
+    [document.getElementById("icon-map"), "../assets/icons/map_w.svg", "../assets/icons/map_b.svg"],
+    [document.getElementById("icon-oepnv"), "../assets/icons/oepnv_w.svg", "../assets/icons/oepnv_b.svg"],
+    [document.getElementById("icon-car"), "../assets/icons/car_w.svg", "../assets/icons/car_b.svg"],
+    [document.getElementById("icon-bicycle"), "../assets/icons/bicycle_w.svg", "../assets/icons/bicycle_b.svg"]
 ]
 
 select(0)
