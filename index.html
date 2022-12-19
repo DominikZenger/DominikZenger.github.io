@@ -1,12 +1,57 @@
 <html lang="de">
 <head>
-    <title>Mobilität der Zukunft</title>
+    <title>Mobilität der Zukunft - Home</title>
     <link rel="stylesheet" href="stylesheets/basecontent.css">
     <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/menu.css">
 </head>
 <body>
-    <h1>Mobilität der Zukunft</h1>
-    <p>Inhalt bzw. Text</p>
-    <a href="./pages/analyse_problemstellen.html">Example Page</a>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="menu"></div>
+    <script type="text/javascript">$("#menu").load("../includes/menu.html");</script>
+
+    <div id="content">
+        <img src="assets/images/mobilitaet_der_zukunft_logo.png" alt="" id="logo">
+        <div class="text-wrapper">
+            <br>
+            <br>
+            <p style="text-align: center">
+                ... ist der Titel eines P-Seminars des Abiturjahrgangs 2021/23 des Gymnasium Kirchheims.
+                <br>
+                <br>
+                <b>
+                Die teilnehmenden Schüler haben es sich zur Aufgabe gemacht, die aktuelle Situation der Mobilität (vor allem im Raum München) zu analysieren
+                und anschließend Lösungen & Verbesserungsvorschläge zu präsentieren.
+                </b>
+            </p>
+        </div>
+        <div id="cover">
+            <a class="cover-wrapper" href="pages/analyse_problemstellen.html">
+                <h3>Problemstellungen</h3>
+                <img src="assets/images/stau.png" alt="" class="cover-img">
+
+            </a>
+            <a class="cover-wrapper" href="pages/verkehrszaehlung.html">
+                <h3>Verkkehrszählung</h3>
+                <img src="assets/images/auto.png" alt="" class="cover-img">
+            </a>
+            <a class="cover-wrapper" href="pages/oepnv.html">
+                <h3>ÖPNV-Analyse</h3>
+                <img src="assets/images/opnv.png" alt="" class="cover-img">
+            </a>
+            <a class="cover-wrapper" href="pages/weg_zum_gyki.html">
+                <h3>Weg zum Gyki</h3>
+                <img src="assets/images/fahrrad.png" alt="" class="cover-img">
+
+            </a>
+            <a class="cover-wrapper" href="pages/schulweg_vergleich.html">
+                <h3>Schulweg Vergleich</h3>
+                <img src="assets/images/bahnhof.png" alt="" class="cover-img">
+            </a>
+
+        </div>
+
+
+    </div>
 </body>
 </html>
