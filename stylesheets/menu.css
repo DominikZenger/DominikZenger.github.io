@@ -50,7 +50,6 @@ Sidebar styles
         margin-right: 10px;
         transform: rotate(-90deg);
         transition: all .1s ease-in-out;
-        -webkit-user-drag: none;
     }
     .dropdown:hover .dropdown-title img {
         transform: rotate(0deg);
@@ -77,7 +76,6 @@ Sidebar styles
     .dropdown-content a img {
         margin-right: 8px;
         height: 35px;
-        -webkit-user-drag: none;
     }
     .link {
         float: left;
@@ -96,10 +94,11 @@ Sidebar styles
         size: 100%;
     }
     #current {
-        position: relative;
-        float: right;
+        position: fixed;
+        right: 0px;
+        top: 0px;
         height: 56px;
-        padding: 0 100px 0 0;
+        padding: 0 20px;
         font-weight: bold;
         font-style: italic;
         color: var(--color);
