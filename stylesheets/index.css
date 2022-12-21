@@ -2,11 +2,10 @@
 Homepage styles
 */
 
-#content {}
 body {
-    margin: 0;
     padding: 0;
     background-color: white;
+    margin-top: 20px;
 }
 
 #logo {
@@ -16,11 +15,6 @@ body {
     transform: translateX(-50%);
     /*scale: .7;*/
     width: 40%;
-}
-
-#content {
-    width: 100%;
-    height: 100%;
 }
 
 .cover-img {
@@ -43,6 +37,7 @@ body {
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
+
 }
 
 .cover-wrapper {
@@ -52,16 +47,20 @@ body {
     /*height: 300px;*/
     margin-right: 10px;
     margin-left: 10px;
-}
-h3 {
-    position: relative;
-    text-align: center;
-    top:200px;
-    background-color: rgb(255,255,255,.5);
-
-}
-a {
     text-decoration: none;
     color: black;
+}
+.cover-wrapper p {
+    position: relative;
+    text-align: center;
+    bottom:30%;
+    background-color: rgb(255,255,255,.5);
+    width: 100%;
+    font-size: 1.3vw;
+}
+@media only screen and (max-device-width: 750px) {
+    body {
+        margin-top: 100px;
+    }
 }
 
