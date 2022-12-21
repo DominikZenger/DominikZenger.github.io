@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../stylesheets/basecontent.css">
     <link rel="stylesheet" href="../stylesheets/menu.css">
+    <link rel="stylesheet" href="../stylesheets/footnotes.css">
     <link rel="stylesheet" href="../stylesheets/analyse_problemstellen.css">
     <script src="../scripts/analyse_problemstellen.js"></script>
     <title>Mobilität der Zukunft - Analyse Problemstellen</title>
@@ -65,6 +66,10 @@
 
         <script>allInfosInvisible()</script>
     </div>
-
+    
+    <!-- https://api.jquery.com/load/ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="footnotes"></div>
+    <script type="text/javascript">$("#footnotes").load("../includes/footnotes.html");</script>
 </body>
 </html>

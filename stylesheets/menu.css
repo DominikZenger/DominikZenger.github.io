@@ -19,8 +19,8 @@ Sidebar styles
         z-index: 999999;
         top: 0;
         left: 0;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
         border-bottom: 3px solid var(--border-color);
     }
     #menu #menu-icon {
@@ -33,7 +33,7 @@ Sidebar styles
     }
     .dropdown {
         float: left;
-        min-width: 200px;
+        min-width: 150px;
         padding: 10px 10px 10px 10px;
         user-select: none;
         cursor: default;
@@ -41,13 +41,13 @@ Sidebar styles
     .dropdown-title {
         font-weight: bold;
         color: var(--color);
-        font-size: 30px;
+        font-size: 25px;
         display: flex;
         align-items: center;
     }
     .dropdown-title img {
-        width: 35px;
-        margin-right: 10px;
+        width: 30px;
+        margin-right: 5px;
         transform: rotate(-90deg);
         transition: all .1s ease-in-out;
     }
@@ -58,7 +58,7 @@ Sidebar styles
         display: none;
         position: absolute;
         background-color: var(--main-bg-color);
-        min-width: 400px;
+        min-width: 300px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
         margin-top: 10px;
         margin-left: -10px;
@@ -71,22 +71,22 @@ Sidebar styles
         padding: 10px 10px;
         text-decoration: none;
         color: var(--color);
-        font-size: 25px;
+        font-size: 20px;
     }
     .dropdown-content a img {
         margin-right: 8px;
-        height: 35px;
+        height: 25px;
     }
     .link {
         float: left;
-        min-width: 200px;
+        min-width: 150px;
         user-select: none;
         cursor: pointer;
         position: relative;
     }
     .link a {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 25px;
         text-decoration: none;
         color: var(--color);
         padding: 10px 10px 11px 10px;
@@ -97,7 +97,7 @@ Sidebar styles
         position: fixed;
         right: 0px;
         top: 0px;
-        height: 56px;
+        height: 50px;
         padding: 0 20px;
         font-weight: bold;
         font-style: italic;

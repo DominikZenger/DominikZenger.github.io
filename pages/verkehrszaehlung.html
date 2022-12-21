@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../stylesheets/basecontent.css">
     <link rel="stylesheet" href="../stylesheets/menu.css">
+    <link rel="stylesheet" href="../stylesheets/footnotes.css">
     <link rel="stylesheet" href="../stylesheets/verkehrszaehlung.css">
     <script src="../scripts/verkehrszaehlung.js"></script>
     <title>Mobilität der Zukunft - Verkehrszählung</title>
@@ -88,11 +89,16 @@
             <ul style="margin: 8px 0 0 0;">
                 <li>A99 Richtung Kreuz München Süd, Höhe Aschheim</li>
                 <li>Kreuzung Erdinger Str. und Heimstettener Str. in Kirchheim</li>
-                <li>Kirchheim, St2082 (Kirchheimer Ei) </li>
+                <li>Kirchheim, St2082 (Kirchheimer Ei)</li>
             </ul>
         </div>
 
         <script>document.getElementById("infos").style.display = "none";</script>
     </div>
+    
+    <!-- https://api.jquery.com/load/ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="footnotes"></div>
+    <script type="text/javascript">$("#footnotes").load("../includes/footnotes.html");</script>
 </body>
 </html>
