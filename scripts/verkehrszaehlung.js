@@ -64,6 +64,7 @@ function submit() {
 function next() {
     document.getElementById("quiz").style.display = "none";
     document.getElementById("infos").style.display = "";
+    scrollTo(0, 0);
 }
 
 function scroll_to_question(question) {
