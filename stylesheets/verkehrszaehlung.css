@@ -18,10 +18,11 @@
     text-align: left;
     font-size: min(3.5vmin, 50px);
     z-index: 1;
+    font-weight: bold;
 }
 .question-wrapper .question input {
     transform: scale(150%);
-    vertical-align: 40%;
+    vertical-align: 30%;
 }
 .question-wrapper .question .result {
     font-size: min(5vmin, 70px);
