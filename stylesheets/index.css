@@ -24,6 +24,7 @@ body {
     float: top;
     /*height: 100%;*/
     /*opacity: 20%;*/
+    border-radius: 10%;
 }
 #cover {
     position: relative;
