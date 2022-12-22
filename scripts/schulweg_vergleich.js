@@ -8,12 +8,15 @@ function change() {
     let opnv = document.getElementById("OPNV")
     let sonstiges = document.getElementById("Sonstiges")
 
+    let caption = document.getElementById("caption")
+
     let factor = "2"
     if(winter_selected) {
+        caption.innerHTML = "Sommer"
         // document.getElementById("bar-diagram").src = "../assets/images/sommer.png"
         auto.style.height = "calc("+factor+" *4%)"
         auto.getElementsByTagName("span").item(0).innerHTML = "4"
-        eAuto.style.height = "calc("+factor+" *0)"
+        eAuto.style.height = "0"
         eAuto.getElementsByTagName("span").item(0).innerHTML = "0"
         motorrad.style.height = "calc("+factor+" *4%)"
         motorrad.getElementsByTagName("span").item(0).innerHTML = "4"
@@ -26,6 +29,7 @@ function change() {
         winter_selected = false
     }
     else {
+        caption.innerHTML = "Winter"
         // document.getElementById("bar-diagram").src = "../assets/images/winter.png"
         auto.style.height = "calc("+factor+" *13%)"
         auto.getElementsByTagName("span").item(0).innerHTML = "13"
