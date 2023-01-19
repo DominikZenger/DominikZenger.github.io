@@ -64,7 +64,3 @@ ul {
     margin-block-start: 8px;
     margin-block-end: 0px;
 }
-
-#preload-1 { background: url(../assets/images/map_oepnv.png) no-repeat -9999px -9999px; }
-#preload-2 { background: url(../assets/images/map_car.png) no-repeat -9999px -9999px; }
-#preload-3 { background: url(../assets/images/map_bicycle.png) no-repeat -9999px -9999px; }
