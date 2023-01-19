@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../stylesheets/basecontent.css">
+    <link rel="stylesheet" href="../stylesheets/menu.css">
+    <link rel="stylesheet" href="../stylesheets/footnotes.css">
+    <link rel="stylesheet" href="../stylesheets/analyse_problemstellen.css">
+    <script src="../scripts/analyse_problemstellen.js"></script>
+
+    <title>Mobilität der Zukunft - Analyse Problemstellen</title>
+    <link rel="icon" href="../assets/icons/logo.png">
+</head>
+<body>
+    <!-- https://api.jquery.com/load/ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="menu"></div>
+    <script type="text/javascript">$("#menu").load("../includes/menu.html");</script>
+    <div class="wrapper">
+        <h1>Verkehrsaufkommen an kritischen Stellen rund um Heimstetten, Kirchheim und Feldkirchen</h1>
+        <p>Abbildung der Gemeinden Heimstetten, Kirchheim und Feldkirchen.</p>
+        <div id="map">
+            <img src="../assets/images/Verkehrsanalyse_Map.png" alt="Verkehrsanalyse Karte" style="
+            width: calc(var(--map-scale) * 698px);">
+            <div class="circle" id="c0" onclick="selectArea(0)" title="Feldkirchner-Kreuzung"></div>
+            <div class="circle" id="c1" onclick="selectArea(1)" title="Kreuzung Ammerthalstraße und Feldkirchner Straße"></div>
+            <div class="circle" id="c2" onclick="selectArea(2)" title="Kirchheimer-Ei"></div>
+            <div class="circle" id="c3" onclick="selectArea(3)" title="Kirchheimer-Kreuzung"></div>
+            <div class="circle" id="c4" onclick="selectArea(4)" title="Florianstraße"></div>
+            <p class="source">Quelle: Google Maps</p>
+        </div>
+        <div id="base-infos">
+            <h2 id="name">Name</h2>
+            <p>
+                Eine Analyse der Verkehrsdaten von Google Maps, eingeteilt in Wochentag und Uhrzeit.
+                <br>
+                <br>
+                <b>Zeitraum:</b> Frühling 2022
+            </p>
+            <br>
+            <div id="infos">
+                <div>
+                    <div class="grid-container" id="grid1"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid2"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid3"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid4"></div>
+                </div>
+                <div>
+                    <div class="grid-container" id="grid5"></div>
+                </div>
+            </div>
+            <div id="legend">
+                <div id="free">Frei</div>
+                <div id="traffic">Stau</div>
+            </div>
+            <br>
+            <div class="text-wrapper">
+                <p id="description">
+            </div>
+        </div>
+
+        <script>allInfosInvisible()</script>
+    </div>
+    
+    <!-- https://api.jquery.com/load/ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="footnotes"></div>
+    <script type="text/javascript">$("#footnotes").load("../includes/footnotes.html");</script>
+</body>
+</html>

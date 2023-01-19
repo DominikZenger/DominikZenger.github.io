@@ -1,0 +1,53 @@
+/*
+Content page styles
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-bottom: 70px;
+    background-color: #41464D;
+}
+@media only screen and (max-device-width: 750px) {
+    body {
+        margin-top: 150px;
+    }
+}
+body h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.source {
+    font-size: smaller;
+    color: gray;
+    text-decoration: none;
+    font-style: italic;
+    margin-top: 0;
+}
+.wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-content: center;
+    width: 90%;
+    /*bottom: 100px;*/
+    /*margin-right: 5%;*/
+    /*margin-left: 5%;*/
+    background-color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 3%;
+    height: available;
+}
+.text-wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    margin-bottom: 30px;
+    width: 80%;
+}

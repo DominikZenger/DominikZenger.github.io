@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../scripts/schulweg_vergleich.js"></script>
+    <link rel="stylesheet" href="../stylesheets/basecontent.css">
+    <link rel="stylesheet" href="../stylesheets/menu.css">
+    <link rel="stylesheet" href="../stylesheets/footnotes.css">
+    <link rel="stylesheet" href="../stylesheets/schulweg_vergleich.css">
+    
+    <title>Mobilität der Zukunft - Schulwegvergleich</title>
+    <link rel="icon" href="../assets/icons/logo.png">
+
+
+</head>
+<body>
+<!-- https://api.jquery.com/load/ -->
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<div id="menu"></div>
+<script type="text/javascript">$("#menu").load("../includes/menu.html");</script>
+
+<div class="wrapper">
+    <h1>Verkehrsnutzung der Schüler unserer Schule</h1>
+    <iframe
+            width="640px" height="480px"
+            src="https://forms.office.com/Pages/ResponsePage.aspx?id=z4ECKlf0DUivQovrexB3uLfTF6cQjRFJvcnQ-njD37lUM1RPRjRYNkJGTU03T01QWkZUQzVWQ1FVVS4u&embed=true"
+            frameborder="0" marginwidth="0" marginheight="0"
+            style="
+                border: none;
+                max-width:100%;
+                max-height:100vh;
+                margin-bottom: 3%;
+            "
+                allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen>
+    </iframe>
+    <br>
+    <div class="text-wrapper">
+        In dieser Umfrage, die Sie gerade zum Teil beantwortet haben, wurde die ehemalige Q11 des Gymnasium Kirchheim zu ihrer Verkehrsnutzung befragt. Die Umfrage fand zweimal statt: einmal im Sommer und einmal im Winter. Anschließend wurden die Ergebnisse beider Umfragen miteinander verglichen, um herauszufinden in welcher Jahreszeit der Verkehr schädlicher für die Umwelt ist.
+    </div>
+    <div id="image-switch">
+
+        <table class="graph">
+            <caption>
+                <!-- Schulweg-->
+                <div class="switch-button">
+                    <input class="switch-button-checkbox" type="checkbox" onclick="change()">
+
+                    <label class="switch-button-label"></label>
+                    <span class="switch-button-label-span" id="summer_label">
+                        <b>Sommer</b>
+                    </span>
+                    <span class="switch-button-label-span" id="winter_label">
+                        <b>Winter</b>
+                    </span>
+                </div>
+                <p id="caption">Sommer</p>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Fahrzeug</th>
+                    <th scope="col">Anzahl</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr style="height:8%" id="Auto">
+                    <th scope="row">Auto</th>
+                    <td><span>4</span></td>
+                </tr>
+                <tr style="height:0" id="E-Auto">
+                    <th scope="row">E-Auto</th>
+                    <td><span>0</span></td>
+                </tr>
+                <tr style="height:8%" id="Motorrad">
+                    <th scope="row">Motorrad</th>
+                    <td><span>4</span></td>
+                </tr>
+                <tr style="height:78%" id="Fahrrad">
+                    <th scope="row">Fahrrad</th>
+                    <td><span>39</span></td>
+                </tr>
+                <tr style="height:20%" id="OPNV">
+                    <th scope="row">ÖPNV</th>
+                    <td><span>10</span></td>
+                </tr>
+                <tr style="height:10%" id="Sonstiges">
+                    <th scope="row">Sonstiges</th>
+                    <td><span>5</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    <!-- https://api.jquery.com/load/ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <div id="footnotes"></div>
+    <script type="text/javascript">$("#footnotes").load("../includes/footnotes.html");</script>
+</body>
+</html>
