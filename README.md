@@ -1,2 +1,2 @@
 # P-Seminar Website
-Website für das PSeminar
+Website für das P-Seminar
